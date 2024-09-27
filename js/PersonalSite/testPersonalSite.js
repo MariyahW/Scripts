@@ -1,10 +1,10 @@
 const pup = require('puppeteer');
 
 function test(){
-    automateContact();
+    automateDownload();
 }
 
-async function automateContact(){
+async function automateDownload(){
     const browser = await pup.launch({headless: false});
     const page = await browser.newPage();
     await page.setViewport({width: 1100, height: 800});
